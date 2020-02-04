@@ -12,7 +12,7 @@ func main() {
 		if len(names) == 1 {
 			name = names[0]
 		}
-		w.Write([]byte("Hello " + name + "\n"))
+		w.Write([]byte("Hello " + name + "\n\n"))
 	})
 	err := http.ListenAndServe(":3000", nil)
 	if err != nil {
